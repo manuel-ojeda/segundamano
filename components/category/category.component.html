@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+		<div class="col m6">
+			<section class="card" ng-repeat="category in $ctrl.categories | limitTo: 2">
+				<div id="categories" class="card-image">
+					<img ng-src="{{category.img}}">
+					<span class="card-title">{{category.name}}</span>
+				</div>
+			</section>
+		</div>
+		<div class="col m3">
+			<section class="card" ng-repeat="category in $ctrl.categories | limitTo: 3:2">
+				<div class="card-image">
+					<img ng-src="{{category.img}}">
+					<span class="card-title">{{category.name}}</span>
+				</div>
+			</section>
+		</div>
+		<div class="col m3">
+			<section class="card" ng-repeat="category in $ctrl.categories | limitTo: 2:5">
+				<div class="card-image">
+					<img ng-src="{{category.img}}">
+					<span class="card-title">{{category.name}}</span>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>

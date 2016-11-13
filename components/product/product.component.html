@@ -1,0 +1,41 @@
+<div class="container">
+	<div class="row">
+		<section id="most" class="col m3">
+			<div class="card" ng-repeat="product in $ctrl.products | limitTo: 3">
+				<div class="card-image">
+					<span class="price">${{product.price}}</span>
+					<img ng-src="{{product.img}}">
+					<span class="card-title">{{product.name}}</span>
+				</div>
+			</div>
+		</section>
+		<section id="most" class="col m3">
+			<div class="card" ng-repeat="product in $ctrl.products | limitTo: 2:3">
+				<div class="card-image">
+					<span class="price">${{product.price}}</span>
+					<img ng-src="{{product.img}}">
+					<span class="card-title">{{product.name}}</span>
+				</div>
+			</div>
+		</section>
+		<section id="most" class="col m3">
+			<div class="card" ng-repeat="product in $ctrl.products | limitTo: 3:5">
+				<span class="price">${{product.price}}</span>
+				<div class="card-image">
+					<span class="price">{{product.price}}</span>
+					<img ng-src="{{product.img}}">
+					<span class="card-title">{{product.name}}</span>
+				</div>
+			</div>
+		</section>
+		<section id="most" class="col m3">
+			<div class="card" ng-repeat="product in $ctrl.products | limitTo: 2:8">
+				<div class="card-image">
+					<span class="price">${{product.price}}</span>
+					<img ng-src="{{product.img}}">
+					<span class="card-title">{{product.name}}</span>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
